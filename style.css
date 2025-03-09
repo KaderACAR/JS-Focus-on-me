@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-bg {
+    background-image: url(/assest/bgcimage.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.focus-on-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: navy;
+    flex-direction: column;
+    font-size: 20px;
+    position: relative;
+}
+
+.focus-on-me h1 {
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.focus-on-me span {
+    font-weight: 900;
+    font-size: 23px;
+}
+.position-relative{
+    position: relative;
+    z-index: 10;
+}
+
+#my-canvas{
+    position: absolute;
+    top: 0;
+}
+
+.focus-on-me button {
+    font-size: 20px;
+    border-radius: 7px;
+    color: navy;
+    border: 1px solid navy;
+    background-color:#ffffff;
+    padding: 13px 20px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.focus-on-me button:hover {
+    background-color: #f0f0f0;
+}
+
+audio {
+    display: none;
+}
+
+.icon-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.icon-buttons i {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    place-items: center;
+    background: navy;
+    justify-content: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+    
+    
+}
+
+.icon-buttons i:hover {
+    transform: scale(1.1);
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .7) 30%, #000 50%, rgba(0, 0, 0, .7) 70%);
+    mask-size: 200%;
+    animation: card-mask 2s infinite;
+}
+
+
+@keyframes card-mask {
+    from {
+        mask-position: 150%
+    }
+
+    to {
+        mask-position: -50%
+    }
+}
+
+
+#volume-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 38rem;
+    margin-top: 40px; 
+    accent-color: navy;
+}
