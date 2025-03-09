@@ -11,7 +11,7 @@ clickTop.addEventListener("click", function (){
         var confettiSettings = { target: 'my-canvas' };
 var confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
-        alert("0 distractions! 😲 Look at me, not the phone! 📱👀")
+        alert("You've been distracted 5 times! 😲 Look at me, not the phone! 📱👀")
     }
  })
 
